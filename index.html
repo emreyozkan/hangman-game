@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hangman Game</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="word-list.js" defer></script>
+    <script src="hangman.js" defer></script>
+</head>
+<body>
+    <h1>Welcome to Hangman game!</h1>
+    <p>Try to guess the hidden word before you run out of lives.</p>
+    <p>Good luck!</p>
+
+    <p id="word">_ _ _ _ _</p>
+
+    <div class="container">
+        <div class="hangman-box">
+            <img src="images/hangman-0.svg" alt="hangman-img">
+        </div>
+    </div>
+
+    <p id="lives">6 lives left</p>
+
+    <div id="hint"></div>
+
+    <div id="keyboard"></div>
+
+    <p id="message"></p>
+    <button id="play-again" style="display:none;">Play Again</button>
+
+    
+</body>
+</html>

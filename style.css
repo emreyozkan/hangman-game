@@ -1,0 +1,101 @@
+body {
+    text-align: center;        
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+    background: #b2f1f0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#word {
+    font-size: 30px;
+    letter-spacing: 15px;
+    margin-bottom: 20px;
+}
+
+.hangman-box img {
+    max-width: 200px; /* resmi küçültür */
+    height: auto;     /* orantıyı korur */
+    display: block;
+    margin: 0 auto;   /* ortalamak için */
+}
+
+#hint {
+    margin-top: 15px;
+    font-size: 18px;
+    color: orange;
+    font-weight: bold;
+}
+
+#lives {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#keyboard button {
+    padding: 10px 15px;
+    margin: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, 0.4);   /* daha şeffaf beyaz border */
+    border-radius: 8px;                   /* hafif daha yuvarlak */
+    background-color: rgba(255, 255, 255, 0.3); /* yarı şeffaf beyaz */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.2s ease;
+}
+
+#keyboard {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr); /* 9 buton per row */
+    gap: 8px;
+    justify-content: center;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    width: max-content;
+    margin: 0 auto 20px;
+}
+/* Hover effect */
+#keyboard button:hover {
+    background-color: rgba(255,255,255,0.6); /* hover’da biraz daha opak */
+    transform: scale(1.1);
+}
+
+/* Disabled button styling */
+#keyboard button:disabled {
+    background-color: rgba(200,200,200,0.3); /* daha şeffaf gri */
+    cursor: not-allowed;
+    transform: scale(1);
+}
+
+/* Play Again button larger size */
+#play-again {
+    padding: 15px 25px;                  /* daha büyük buton */
+    font-size: 20px;                     /* yazı boyutu arttı */
+    cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.2s ease;
+}
+
+#play-again:hover {
+    background-color: rgba(255,255,255,0.6);
+    transform: scale(1.1);               /* hover’da büyüme efekti */
+}
